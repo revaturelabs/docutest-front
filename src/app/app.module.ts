@@ -7,13 +7,15 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LineChartComponent } from './components/line-chart/line-chart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LeftColumnComponent } from './components/left-column/left-column.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     DashboardComponent,
-    LineChartComponent
+    LineChartComponent,
+    LeftColumnComponent
   ],
   imports: [
     BrowserModule,
