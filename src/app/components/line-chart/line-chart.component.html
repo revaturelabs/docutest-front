@@ -1,0 +1,28 @@
+<div>
+    
+    <!-- <button class="btn btn-outline-dark rounded-0" (click)="showRoute1()">Route 1</button>
+    <button class="btn btn-outline-dark rounded-0" (click)="showRoute2()">Route 2</button>
+ -->
+
+    <div *ngFor="let routeName of routeNames">
+        <button class="btn btn-outline-dark rounded-0" (click)="showRoute(routeName)">{{routeName}}</button>
+    </div>
+
+    <ngx-charts-line-chart
+        [view]="view"
+        [scheme]="colorScheme"
+        [legend]="legend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxis]="xAxis"
+        [yAxis]="yAxis"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        [timeline]="timeline"
+        [results]="selectedRoute"
+        (select)="onSelect($event)"
+        (activate)="onActivate($event)"
+        (deactivate)="onDeactivate($event)"
+        
+    ></ngx-charts-line-chart>
+</div>
