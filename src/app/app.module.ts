@@ -11,6 +11,9 @@ import { FileUploadComponent } from 'src/app/components/file-upload/file-upload.
 import { LeftColumnComponent } from './components/left-column/left-column.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { StoreModule } from '@ngrx/store';
+import * as fromGraphRoute from './state/graph-route/graph-route.reducer';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     NgxChartsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    StoreModule.forRoot({
+      graphRoute: fromGraphRoute.reducer,
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
