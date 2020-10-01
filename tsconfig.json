@@ -6,6 +6,7 @@
 */
 {
   "files": [],
+  "include": ["src"],
   "references": [
     {
       "path": "./tsconfig.app.json"
@@ -16,6 +17,7 @@
 ],
 "compilerOptions": {
   "resolveJsonModule": true,
-  "esModuleInterop": true
+  "esModuleInterop": true,
+  "composite": true
 },
 }
