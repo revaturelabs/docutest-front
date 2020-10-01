@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { FileUploadComponent } from 'src/app/components/file-upload/file-upload.component';
 
 const routes: Routes = [
-  {
-    path: 'dashboard',
-    component: DashboardComponent
-  }
+  { path: 'upload', component: FileUploadComponent },
+  { path: 'dashboard', component: DashboardComponent },
+
 ];
 
 @NgModule({

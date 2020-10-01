@@ -1,57 +1,129 @@
-export var multi = [ 
-  {
-    "/route-1": [
+export var multi: object = {
+  '/route1':
+    [
+      {
+      "name": "POST",
+      "series": [
+        {
+          "name": "1",
+          "value": 620,
+          "HTTP Status": 200,
+        },
+        {
+          "name": "2",
+          "value": 730,
+          "HTTP Status": 200,
+        },
+        {
+          "name": "3",
+          "value": 890,
+          "HTTP Status": 200,
+        }
+      ]
+    },
+    {
+      "name": "GET",
+      "series": [
+        {
+          "name": "1",
+          "value": 400,
+          "HTTP Status": 200,
+        },
+        {
+          "name": "2",
+          "value": 780,
+          "HTTP Status": 200,
+        },
+        {
+          "name": "3",
+          "value": 300,
+          "HTTP Status": 200,
+        },
+      ]
+    },
+  
+    {
+      "name": "PUT",
+        "series": [
+          {
+            "name": "1",
+            "value": 570,
+            "HTTP Status": 200,
+          },
+          {
+            "name": "2",
+            "value": 900,
+            "HTTP Status": 200,
+          },
+          {
+            "name": "3",
+            "value": 500,
+            "HTTP Status": 200,
+          },
+      ]
+    },
+    {
+      "name": "DELETE",
+      "series": [
+        {
+          "name": "1",
+          "value": 570,
+          "HTTP Status": 200,
+        },
+        {
+          "name": "2",
+          "value": 0,
+          "HTTP Status": 500,
+        },
+        {
+          "name": "3",
+          "value": 500,
+          "HTTP Status": 200,
+        },
+
+      ]
+    }
+  ],
+  '/route2': 
+    [
       {
         "name": "POST",
         "series": [
           {
             "name": "1",
-            "value": 620
+            "value": 500,
+            "HTTP Status": 200,
           },
           {
             "name": "2",
-            "value": 730
+            "value": 730,
+            "HTTP Status": 200,
           },
           {
             "name": "3",
-            "value": 890
+            "value": 300,
+            "HTTP Status": 200,
           }
         ]
       },
-    
       {
         "name": "GET",
         "series": [
           {
             "name": "1",
-            "value": 400
+            "value": 410,
+            "HTTP Status": 200,
           },
           {
             "name": "2",
-            "value": 780
+            "value": 800,
+            "HTTP Status": 200,
           },
           {
             "name": "3",
-            "value": 300
+            "value":450,
+            "HTTP Status": 200,
           },
-        ]
-      },
-    
-      {
-        "name": "PUT",
-          "series": [
-            {
-              "name": "1",
-              "value": 570
-            },
-            {
-              "name": "2",
-              "value": 900
-            },
-            {
-              "name": "3",
-              "value": 500
-            },
         ]
       },
       {
@@ -59,74 +131,106 @@ export var multi = [
         "series": [
           {
             "name": "1",
-            "value": 570
+            "value": 560,
+            "HTTP Status": 200,
           },
           {
             "name": "2",
-            "value": 0
+            "value": 700,
+            "HTTP Status": 200,
           },
           {
             "name": "3",
-            "value": 500
+            "value": 630,
+            "HTTP Status": 200,
           },
 
-        ]
-      }
-    ]
-  }, 
-  {
-    "/route2": [
+      ]
+    }
+  ],
+  '/route3': 
+  [
+    {
+      "name": "POST",
+      "series": [
+        {
+          "name": "1",
+          "value": 560,
+          "HTTP Status": 200,
+        },
+        {
+          "name": "2",
+          "value": 300,
+          "HTTP Status": 200,
+        },
+        {
+          "name": "3",
+          "value": 900,
+          "HTTP Status": 200,
+        }
+      ]
+    },
+    {
+      "name": "GET",
+      "series": [
+        {
+          "name": "1",
+          "value": 600,
+          "HTTP Status": 200,
+        },
+        {
+          "name": "2",
+          "value": 200,
+          "HTTP Status": 200,
+        },
+        {
+          "name": "3",
+          "value":450,
+          "HTTP Status": 200,
+        },
+      ]
+    }
+  ],
+  '/route4': 
+    [
       {
         "name": "POST",
         "series": [
           {
             "name": "1",
-            "value": 500
+            "value": 500,
+            "HTTP Status": 200,
           },
           {
             "name": "2",
-            "value": 730
+            "value": 730,
+            "HTTP Status": 200,
           },
           {
             "name": "3",
-            "value": 300
+            "value": 300,
+            "HTTP Status": 200
           }
         ]
       },
-    
       {
         "name": "GET",
         "series": [
           {
             "name": "1",
-            "value": 410
+            "value": 410,
+            "HTTP Status": 200,
           },
           {
             "name": "2",
-            "value": 800
+            "value": 800,
+            "HTTP Status": 200,
           },
           {
             "name": "3",
-            "value":450
+            "value":450,
+            "HTTP Status": 200,
           },
-        ]
-      },
-    
-      {
-        "name": "PUT",
-          "series": [
-            {
-              "name": "1",
-              "value": 570
-            },
-            {
-              "name": "2",
-              "value": 600
-            },
-            {
-              "name": "3",
-              "value": 0
-            },
         ]
       },
       {
@@ -134,89 +238,23 @@ export var multi = [
         "series": [
           {
             "name": "1",
-            "value": 560
+            "value": 560,
+            "HTTP Status": 200,
           },
           {
             "name": "2",
-            "value": 700
+            "value": 700,
+            "HTTP Status": 200,
           },
           {
             "name": "3",
-            "value": 630
+            "value": 630,
+            "HTTP Status": 200,
           },
 
-        ]
-      }
-    ]
-  }
-]
-;
+      ]
+    }
+  ],
+};
 
-// export var multi = [
-//   {
-//     "name": "Germany",
-//     "series": [
-//       {
-//         "name": "1990",
-//         "value": 62000000
-//       },
-//       {
-//         "name": "2010",
-//         "value": 73000000
-//       },
-//       {
-//         "name": "2011",
-//         "value": 89400000
-//       }
-//     ]
-//   },
 
-//   {
-//     "name": "USA",
-//     "series": [
-//       {
-//         "name": "1990",
-//         "value": 250000000
-//       },
-//       {
-//         "name": "2010",
-//         "value": 309000000
-//       },
-//       {
-//         "name": "2011",
-//         "value": 311000000
-//       }
-//     ]
-//   },
-
-//   {
-//     "name": "France",
-//     "series": [
-//       {
-//         "name": "1990",
-//         "value": 58000000
-//       },
-//       {
-//         "name": "2010",
-//         "value": 50000020
-//       },
-//       {
-//         "name": "2011",
-//         "value": 58000000
-//       }
-//     ]
-//   },
-//   {
-//     "name": "UK",
-//     "series": [
-//       {
-//         "name": "1990",
-//         "value": 57000000
-//       },
-//       {
-//         "name": "2010",
-//         "value": 62000000
-//       }
-//     ]
-//   }
-// ];

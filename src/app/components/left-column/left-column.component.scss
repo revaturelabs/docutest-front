@@ -1,7 +1,9 @@
 .left-column {
   position: fixed;
-  height: 100vh;
-  width: 400px;
+  height: calc(100vh - 72px);
+  min-width: 300px;
+  resize: horizontal;
+  overflow: auto;
 }
 
 .form-control {

@@ -7,7 +7,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LineChartComponent } from './components/line-chart/line-chart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FileUploadComponent } from 'src/app/components/file-upload/file-upload.component';
 import { LeftColumnComponent } from './components/left-column/left-column.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,9 +18,13 @@ import { LeftColumnComponent } from './components/left-column/left-column.compon
     NavbarComponent,
     DashboardComponent,
     LineChartComponent,
+    FileUploadComponent,
     LeftColumnComponent
   ],
   imports: [
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     NgxChartsModule,
