@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="child">
+        <form [formGroup]="uploadForm" (ngSubmit)="onSubmit()">
+            <div>
+                <input class="file-input" type="file" accept=".yaml,.json" name="swaggerFile"
+                    (change)="onFileSelect($event)" />
+            </div>
+            <div>
+                <button class="btn btn-primary" type="submit">Upload</button>
+            </div>
+        </form>
+    </div>
+</div>

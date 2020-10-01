@@ -1,19 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { DashboardComponent } from './dashboard.component';
 
-describe('DashboardComponent', () => {
-  let component: DashboardComponent;
-  let fixture: ComponentFixture<DashboardComponent>;
+import { LeftColumnComponent } from './left-column.component';
+
+describe('LeftColumnComponent', () => {
+  let component: LeftColumnComponent;
+  let fixture: ComponentFixture<LeftColumnComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [DashboardComponent]
+      declarations: [ LeftColumnComponent ]
     })
-      .compileComponents();
+    .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DashboardComponent);
+    fixture = TestBed.createComponent(LeftColumnComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
