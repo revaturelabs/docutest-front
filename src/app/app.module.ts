@@ -7,19 +7,13 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LineChartComponent } from './components/line-chart/line-chart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-<<<<<<< HEAD
 import { FileUploadComponent } from 'src/app/components/file-upload/file-upload.component';
 import { LeftColumnComponent } from './components/left-column/left-column.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-=======
-import { DropdownComponent } from './components/dropdown/dropdown.component';
-
-//NgRX
 import { StoreModule } from '@ngrx/store';
 import * as fromGraphRoute from './state/graph-route/graph-route.reducer';
 
->>>>>>> 96ac29d... Integrated some ngrx functionality
 
 @NgModule({
   declarations: [
@@ -27,12 +21,8 @@ import * as fromGraphRoute from './state/graph-route/graph-route.reducer';
     NavbarComponent,
     DashboardComponent,
     LineChartComponent,
-<<<<<<< HEAD
     FileUploadComponent,
     LeftColumnComponent
-=======
-    DropdownComponent
->>>>>>> 96ac29d... Integrated some ngrx functionality
   ],
   imports: [
     ReactiveFormsModule,
@@ -42,7 +32,6 @@ import * as fromGraphRoute from './state/graph-route/graph-route.reducer';
     AppRoutingModule,
     NgxChartsModule,
     BrowserAnimationsModule,
-    //NgRX
     StoreModule.forRoot({
       graphRoute: fromGraphRoute.reducer,
     })
