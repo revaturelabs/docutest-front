@@ -1,3 +1,5 @@
+/* eslint-disable radix */
+/* eslint-disable no-undef */
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './left-column.component.html',
   styleUrls: ['./left-column.component.scss']
 })
-export class LeftColumnComponent implements OnInit {
+export default class LeftColumnComponent implements OnInit {
   arr;
 
   arr2;
@@ -19,14 +21,15 @@ export class LeftColumnComponent implements OnInit {
   ngOnInit(): void {
     this.arr = document.getElementsByClassName('route-link');
     this.arr2 = document.getElementsByClassName('add-remove-btns');
-    for (let i = 0; i < this.arr.length; i++) {
+    for (let i = 0; i < this.arr.length; i += 1) {
       this.arr[i].setAttribute('id', `route-link-${i + 1}`);
       this.arr2[i].setAttribute('id', `add-remove-btns-${i + 1}`);
       this.btnDispArr.push(false);
     }
   }
 
-  clickEndPoint(route) {
+  // eslint-disable-next-line class-methods-use-this
+  clickEndPoint(route: string) {
     document.getElementById(route).click();
   }
 

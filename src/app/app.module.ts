@@ -8,10 +8,10 @@ import { StoreModule } from '@ngrx/store';
 import FileUploadComponent from './components/file-upload/file-upload.component';
 import AppRoutingModule from './app-routing.module';
 import AppComponent from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import NavbarComponent from './components/navbar/navbar.component';
 import DashboardComponent from './pages/dashboard/dashboard.component';
-import { LineChartComponent } from './components/line-chart/line-chart.component';
-import { LeftColumnComponent } from './components/left-column/left-column.component';
+import LineChartComponent from './components/line-chart/line-chart.component';
+import LeftColumnComponent from './components/left-column/left-column.component';
 import * as fromGraphRoute from './state/graph-route/graph-route.reducer';
 
 @NgModule({
@@ -38,5 +38,5 @@ import * as fromGraphRoute from './state/graph-route/graph-route.reducer';
   providers: [],
   bootstrap: [AppComponent]
 })
-class AppModule {}
-export default AppModule;
+// eslint-disable-next-line import/prefer-default-export
+export class AppModule {}

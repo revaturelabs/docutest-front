@@ -1,4 +1,4 @@
-export var multi: object = {
+const multi: object = {
   '/route1':
     [
       {
@@ -256,3 +256,4 @@ export var multi: object = {
       }
     ],
 };
+export default multi;

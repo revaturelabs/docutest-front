@@ -8,19 +8,15 @@ module.exports = {
       '@angular-eslint/component-selector': [
         'error',
         { type: 'element', prefix: 'app', style: 'kebab-case' },
-      ]
-
-      
+      ]      
     },
     overrides: [
       {
         files: ['*.component.ts', '.*.component.html', '*.ts'],
         extends: [
           // AirBnB Styleguide rules
-         'airbnb-typescript/base',
-          
+         'airbnb-typescript/base', 
         ],
-
         parser: '@typescript-eslint/parser',
         parserOptions: {
           ecmaVersion: 2020,

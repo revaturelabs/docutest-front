@@ -1,13 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { ObjectUnsubscribedError } from 'rxjs';
-import { multi } from '../../data';
+/* eslint-disable no-console */
+/* eslint-disable class-methods-use-this */
+import { Component } from '@angular/core';
+import multi from '../../data';
 
 @Component({
   selector: 'app-line-chart',
   templateUrl: './line-chart.component.html',
   styleUrls: ['./line-chart.component.scss']
 })
-export class LineChartComponent implements OnInit {
+export default class LineChartComponent {
   multi;
 
   routeNames: any[];
@@ -45,7 +46,8 @@ export class LineChartComponent implements OnInit {
     this.routeNames = [];
     Object.assign(this, { multi });
 
-    for (const [key, value] of Object.entries(this.multi)) {
+    // eslint-disable-next-line no-restricted-syntax
+    for (const [key] of Object.entries(this.multi)) {
       this.routeNames.push(key);
     }
   }
@@ -63,19 +65,15 @@ export class LineChartComponent implements OnInit {
 
   // }
 
-  ngOnInit(): void {
-
-  }
-
-  onSelect(data): void {
+  onSelect(data: any): void {
     console.log('Item clicked', JSON.parse(JSON.stringify(data)));
   }
 
-  onActivate(data): void {
+  onActivate(data: any): void {
     console.log('Activate', JSON.parse(JSON.stringify(data)));
   }
 
-  onDeactivate(data): void {
+  onDeactivate(data: any): void {
     console.log('Deactivate', JSON.parse(JSON.stringify(data)));
   }
 
