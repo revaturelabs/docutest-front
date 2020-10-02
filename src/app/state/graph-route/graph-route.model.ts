@@ -1,3 +1,3 @@
 export interface GraphRoute {
-    route: string;
+  route: string;
 }
