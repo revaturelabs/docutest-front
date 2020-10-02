@@ -16,8 +16,8 @@
     }
 ],
 "compilerOptions": {
+  "experimentalDecorators": true,
   "resolveJsonModule": true,
-  "esModuleInterop": true,
-  "composite": true
+  "esModuleInterop": true
 },
 }
