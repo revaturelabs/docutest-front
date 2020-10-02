@@ -1,4 +1,3 @@
-
 // import { NgModule } from '@angular/core';
 
 // import { StoreModule } from '@ngrx/store';
@@ -24,7 +23,5 @@
 //     StoreDevtoolsModule.instrument({ maxAge: 25 })
 //   ]
 // })
-
-
 
 // export class AppStateModule { }

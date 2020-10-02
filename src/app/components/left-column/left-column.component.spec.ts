@@ -8,9 +8,9 @@ describe('LeftColumnComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LeftColumnComponent ]
+      declarations: [LeftColumnComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

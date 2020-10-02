@@ -1,5 +1,5 @@
-import {GraphRoute} from './graph-route/graph-route.model';
+import { GraphRoute } from './graph-route/graph-route.model';
 
 export interface AppState {
-    readonly graphRoute: GraphRoute;
+  readonly graphRoute: GraphRoute;
 }

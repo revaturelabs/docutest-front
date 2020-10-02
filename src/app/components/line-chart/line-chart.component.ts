@@ -48,14 +48,11 @@ export class LineChartComponent implements OnInit {
     for (const [key, value] of Object.entries(this.multi)) {
       this.routeNames.push(key);
     }
-  
   }
-
 
   // constructor() {
   //   this.routeNames = new Array();
 
-    
   //   Object.assign(this, {multi});
 
   //   for(const [key, value] of Object.entries(this.multi)){
@@ -63,7 +60,7 @@ export class LineChartComponent implements OnInit {
   //   }
 
   //   this.selectedRoute = this.multi[0]
-  
+
   // }
 
   ngOnInit(): void {
