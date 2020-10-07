@@ -22,6 +22,7 @@ import { LeftColumnComponent } from './components/left-column/left-column.compon
 import * as fromGraphRoute from './state/graph-route/graph-route.reducer';
 import { HttpTableComponent } from './components/http-table/http-table.component';
 import { StartLoadTestWidgetComponent } from './components/start-load-test-widget/start-load-test-widget.component';
+import { DemoTableComponent } from './components/demo-table/demo-table.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { StartLoadTestWidgetComponent } from './components/start-load-test-widge
     LeftColumnComponent,
     HttpTableComponent,
     StartLoadTestWidgetComponent,
+    DemoTableComponent,
   ],
   imports: [
     CommonModule,
