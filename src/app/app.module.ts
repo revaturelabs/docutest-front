@@ -23,6 +23,7 @@ import * as fromGraphRoute from './state/graph-route/graph-route.reducer';
 import { HttpTableComponent } from './components/http-table/http-table.component';
 import { StartLoadTestWidgetComponent } from './components/start-load-test-widget/start-load-test-widget.component';
 import { DemoTableComponent } from './components/demo-table/demo-table.component';
+import { ResultsSummaryComponent } from './pages/results-summary/results-summary.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { DemoTableComponent } from './components/demo-table/demo-table.component
     HttpTableComponent,
     StartLoadTestWidgetComponent,
     DemoTableComponent,
+    ResultsSummaryComponent,
   ],
   imports: [
     CommonModule,

@@ -3,6 +3,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 import { SwaggerUploadResponse } from '../../models/swagger-upload-response/swagger-upload-response';
 import { SwaggerSummary } from '../../models/swagger-summary/swagger-summary';
 
@@ -22,7 +23,7 @@ export class FileUploadComponent implements OnInit {
 
   swaggerUploadResponse: SwaggerUploadResponse;
 
-  constructor(private formBuilder: FormBuilder, private http: HttpClient) {}
+  constructor(private formBuilder: FormBuilder, private http: HttpClient, private router: Router) {}
 
   ngOnInit(): void {
     this.uploadForm = this.formBuilder.group({
@@ -70,6 +71,7 @@ export class FileUploadComponent implements OnInit {
       if (this.swaggerSummary.resultsummaries.length) {
         console.log(this.swaggerSummary);
         receivedSummary = true;
+        this.router.navigateByUrl('/results-summary');
       }
       console.log('Swagger Summary Results Summary Length:', this.swaggerSummary.resultsummaries.length);
     }
