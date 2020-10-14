@@ -4,7 +4,7 @@ COPY package.json package-lock.json ./
 RUN npm ci && mkdir /app && mv ./node_modules /app
 WORKDIR /app
 COPY . .
-RUN npm run ng build --prod --aot
+RUN npm run prod
 
 FROM nginx:alpine
 COPY nginx.conf /etc/nginx/conf.d/nginx.conf
