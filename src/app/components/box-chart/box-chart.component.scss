@@ -1,0 +1,33 @@
+#boxChart {
+    width: 100%;
+    height: 100%;
+    // padding: 20px;
+    padding-left: 5%;
+    margin-top: -15%;
+    // margin-righ: 5px;
+    // margin-bottom: 5px;
+    // display: block;
+    // margin: auto;
+    color: #474C55;
+}
+text {
+    fill: #474C55;
+}
+.tick line {
+    stroke: #474C55;
+}
+
+.box-chart-rectangle {
+    fill: #72A4C2;
+}
+
+.box-chart-title {
+    font-size: 1.3em;
+}
+
+.box-chart-subtitle {
+    font-size: 0.7em;
+} 
+.box-chart {
+    line-height: 75%;
+}

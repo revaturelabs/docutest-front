@@ -1,0 +1,153 @@
+{
+  "routes": [
+    {
+      "/route-1": [
+        {
+          "name": "POST",
+          "series": [
+            {
+                "name": "1",
+                "value": 620
+            },
+            {
+                "name": "2",
+                "value": 730
+            },
+            {
+                "name": "3",
+                "value": 890
+            }
+          ]
+        },
+        {
+          "name": "GET",
+          "series": [
+            {
+              "name": "1",
+              "value": 400
+            },
+            {
+              "name": "2",
+              "value": 780
+            },
+            {
+              "name": "3",
+              "value": 300
+            }
+          ]
+        },
+    
+        {
+          "name": "PUT",
+            "series": [
+              {
+                "name": "1",
+                "value": 570
+              },
+              {
+                "name": "2",
+                "value": 900
+              },
+              {
+                "name": "3",
+                "value": 500
+              }
+          ]
+        },
+        {
+          "name": "DELETE",
+          "series": [
+            {
+              "name": "1",
+              "value": 570
+            },
+            {
+              "name": "2",
+              "value": 0
+            },
+            {
+              "name": "3",
+              "value": 500
+            }
+
+          ]
+        }
+      ]
+  }, 
+  {
+    "/route2": [
+      {
+        "name": "POST",
+        "series": [
+          {
+            "name": "1",
+            "value": 500
+          },
+          {
+            "name": "2",
+            "value": 730
+          },
+          {
+            "name": "3",
+            "value": 300
+          }
+        ]
+      },
+    
+      {
+        "name": "GET",
+        "series": [
+          {
+            "name": "1",
+            "value": 410
+          },
+          {
+            "name": "2",
+            "value": 800
+          },
+          {
+            "name": "3",
+            "value":450
+          }
+        ]
+      },
+    
+      {
+        "name": "PUT",
+          "series": [
+            {
+              "name": "1",
+              "value": 570
+            },
+            {
+              "name": "2",
+              "value": 600
+            },
+            {
+              "name": "3",
+              "value": 0
+            }
+        ]
+      },
+      {
+        "name": "DELETE",
+        "series": [
+          {
+            "name": "1",
+            "value": 560
+          },
+          {
+            "name": "2",
+            "value": 700
+          },
+          {
+            "name": "3",
+            "value": 630
+          }
+
+        ]
+      }
+    ]
+  }
+  ]
+}

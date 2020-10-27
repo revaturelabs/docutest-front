@@ -1,0 +1,15 @@
+footer{
+    position:fixed;
+    bottom:0;
+    height: 100px;
+    width:100%;  /* Height of the footer */
+    padding: 25px;
+    background-image: linear-gradient(rgb(72, 76, 86), rgb(72, 76, 86) 20%, rgb(185, 185, 186));
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 13%;
+}
+
